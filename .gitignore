@@ -1,0 +1,131 @@
+*.pyc
+*.pyd
+.vscode
+.vs
+output
+build
+diff_rasterization/diff_rast.egg-info
+diff_rasterization/dist
+tensorboard_3d
+screenshots
+data
+
+########################################
+# submodules/diff_gaussian_rasterization
+submodules/diff_gaussian_rasterization/build/
+submodules/diff_gaussian_rasterization/diff_gaussian_rasterization.egg-info/
+submodules/diff_gaussian_rasterization/dist/
+submodules/diff_gaussian_rasterization/*.pyc
+submodules/diff_gaussian_rasterization/*.pyd
+
+########################################
+# submodules\diff-gaussian-rasterization\third_party\glm
+# Compiled Object files
+submodules\diff-gaussian-rasterization\third_party\glm\*.slo
+submodules\diff-gaussian-rasterization\third_party\glm\*.lo
+submodules\diff-gaussian-rasterization\third_party\glm\*.o
+submodules\diff-gaussian-rasterization\third_party\glm\*.obj
+
+# Precompiled Headers
+submodules\diff-gaussian-rasterization\third_party\glm\*.gch
+submodules\diff-gaussian-rasterization\third_party\glm\*.pch
+
+# Compiled Dynamic libraries
+submodules\diff-gaussian-rasterization\third_party\glm\*.so
+submodules\diff-gaussian-rasterization\third_party\glm\*.dylib
+submodules\diff-gaussian-rasterization\third_party\glm\*.dll
+
+# Fortran module files
+submodules\diff-gaussian-rasterization\third_party\glm\*.mod
+
+# Compiled Static libraries
+submodules\diff-gaussian-rasterization\third_party\glm\*.lai
+submodules\diff-gaussian-rasterization\third_party\glm\*.la
+submodules\diff-gaussian-rasterization\third_party\glm\*.a
+submodules\diff-gaussian-rasterization\third_party\glm\*.lib
+
+# Executables
+submodules\diff-gaussian-rasterization\third_party\glm\*.exe
+submodules\diff-gaussian-rasterization\third_party\glm\*.out
+submodules\diff-gaussian-rasterization\third_party\glm\*.app
+
+# CMake
+submodules\diff-gaussian-rasterization\third_party\glm\CMakeCache.txt
+submodules\diff-gaussian-rasterization\third_party\glm\CMakeFiles
+submodules\diff-gaussian-rasterization\third_party\glm\cmake_install.cmake
+submodules\diff-gaussian-rasterization\third_party\glm\install_manifest.txt
+submodules\diff-gaussian-rasterization\third_party\glm\*.cmake
+submodules\diff-gaussian-rasterization\third_party\glm\!glmConfig.cmake
+submodules\diff-gaussian-rasterization\third_party\glm\!glmConfig-version.cmake
+# ^ May need to add future .cmake files as exceptions
+
+# Test logs
+submodules\diff-gaussian-rasterization\third_party\glm\Testing/*
+
+# Test input
+submodules\diff-gaussian-rasterization\third_party\glm\test/gtc/*.dds
+
+# Project Files
+submodules\diff-gaussian-rasterization\third_party\glm\Makefile
+submodules\diff-gaussian-rasterization\third_party\glm\*.cbp
+submodules\diff-gaussian-rasterization\third_party\glm\*.user
+
+# Misc.
+submodules\diff-gaussian-rasterization\third_party\glm\*.log
+
+# local build(s)
+submodules\diff-gaussian-rasterization\third_party\glm\build*
+
+submodules\diff-gaussian-rasterization\third_party\glm\/.vs
+submodules\diff-gaussian-rasterization\third_party\glm\/.vscode
+submodules\diff-gaussian-rasterization\third_party\glm\/CMakeSettings.json
+submodules\diff-gaussian-rasterization\third_party\glm\.DS_Store
+submodules\diff-gaussian-rasterization\third_party\glm\*.swp
+
+
+########################################
+# SIBR_viewers/
+SIBR_viewers/extlibs/
+SIBR_viewers/build/
+SIBR_viewers/install/
+SIBR_viewers/src/projects/*
+SIBR_viewers/cmake-gui.exe.stackdump
+SIBR_viewers/__pycache__/
+
+# emacs garbage
+SIBR_viewers/#*
+
+# vim garbage
+SIBR_viewers/*.swp
+SIBR_viewers/*.swo
+SIBR_viewers/*.idea/
+SIBR_viewers/*.log
+SIBR_viewers/*.sh
+SIBR_viewers/*.tmp
+
+SIBR_viewers/hs_err_*
+
+# re include common public projects
+SIBR_viewers/!src/projects/ulr/
+SIBR_viewers/!src/projects/dataset_tools/
+
+# more vim garbage
+# Swap
+SIBR_viewers/[._]*.s[a-v][a-z]
+SIBR_viewers/!*.svg  # comment out if you don't need vector files
+SIBR_viewers/[._]*.sw[a-p]
+SIBR_viewers/[._]s[a-rt-v][a-z]
+SIBR_viewers/[._]ss[a-gi-z]
+SIBR_viewers/[._]sw[a-p]
+
+# Session
+SIBR_viewers/Session.vim
+SIBR_viewers/Sessionx.vim
+
+# Temporary
+SIBR_viewers/.netrwhist
+SIBR_viewers/*~
+# Auto-generated tag files
+SIBR_viewers/tags
+# Persistent undo
+SIBR_viewers/[._]*.un~
