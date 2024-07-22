@@ -1,0 +1,3 @@
+cd /d D:\MyCodes\MyPythonCodes\3dgs\3dgs-acceleration\viewers\bin
+
+SIBR_gaussianViewer_app.exe -m 《path_to_truck/cooler etc.》

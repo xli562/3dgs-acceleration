@@ -1,0 +1,9 @@
+cd data/crane
+
+ffmpeg -i {video} -qscale:v 1 -qmin 1 -vf fps={fps} %04d.jpg
+
+cd .
+
+python convert.py -s data/crane
+
+python train.py -s data/crane

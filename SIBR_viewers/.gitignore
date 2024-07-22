@@ -1,0 +1,44 @@
+SIBR_viewers/extlibs/
+SIBR_viewers/build/
+SIBR_viewers/install/
+SIBR_viewers/src/projects/*
+SIBR_viewers/cmake-gui.exe.stackdump
+SIBR_viewers/__pycache__/
+
+# emacs garbage
+SIBR_viewers/#*
+
+# vim garbage
+SIBR_viewers/*.swp
+SIBR_viewers/*.swo
+SIBR_viewers/*.idea/
+SIBR_viewers/*.log
+SIBR_viewers/*.sh
+SIBR_viewers/*.tmp
+
+SIBR_viewers/hs_err_*
+
+# re include common public projects
+SIBR_viewers/!src/projects/ulr/
+SIBR_viewers/!src/projects/dataset_tools/
+
+# more vim garbage
+# Swap
+SIBR_viewers/[._]*.s[a-v][a-z]
+SIBR_viewers/!*.svg  # comment out if you don't need vector files
+SIBR_viewers/[._]*.sw[a-p]
+SIBR_viewers/[._]s[a-rt-v][a-z]
+SIBR_viewers/[._]ss[a-gi-z]
+SIBR_viewers/[._]sw[a-p]
+
+# Session
+SIBR_viewers/Session.vim
+SIBR_viewers/Sessionx.vim
+
+# Temporary
+SIBR_viewers/.netrwhist
+SIBR_viewers/*~
+# Auto-generated tag files
+SIBR_viewers/tags
+# Persistent undo
+SIBR_viewers/[._]*.un~
