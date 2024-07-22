@@ -11,6 +11,8 @@
 
 import os
 import torch
+import numpy as np
+from PIL import Image
 from random import randint
 from utils.loss_utils import l1_loss, ssim
 from gaussian_renderer import render, network_gui
@@ -48,6 +50,8 @@ def training(dataset, opt, pipe, testing_iterations, saving_iterations, checkpoi
     ema_loss_for_log = 0.0
     progress_bar = tqdm(range(first_iter, opt.iterations), desc="Training progress")
     first_iter += 1
+
+    # Main training loop
     for iteration in range(first_iter, opt.iterations + 1):        
         if network_gui.conn == None:
             network_gui.try_connect()
@@ -85,6 +89,23 @@ def training(dataset, opt, pipe, testing_iterations, saving_iterations, checkpoi
 
         render_pkg = render(viewpoint_cam, gaussians, pipe, bg)
         image, viewspace_point_tensor, visibility_filter, radii = render_pkg["render"], render_pkg["viewspace_points"], render_pkg["visibility_filter"], render_pkg["radii"]
+        
+        # Hijacking the fitted image and storing it
+        print(image)
+        image:torch.Tensor
+        image = image.cpu()
+        image = image.detach().numpy()
+        tensor_data = np.array(image)
+        # Rescale the tensor data to range [0, 255]
+        tensor_data = (tensor_data * 255).astype(np.uint8)
+        # Convert from (3, H, W) to (H, W, 3)
+        image_data = np.transpose(tensor_data, (1, 2, 0))
+        # Create an image from the NumPy array
+        image = Image.fromarray(image_data)
+        # Save the image
+        image.save('tensor_image.png')
+        # Display the image (optional)
+        image.show()
 
         # Loss
         gt_image = viewpoint_cam.original_image.cuda()
